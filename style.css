@@ -1,0 +1,669 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+html, 
+body {
+    margin: 0px;
+    padding: 0px;
+    font-size: 16px;
+    font-family: "Nunito", sans-serif;
+    font-weight: bold;
+    scroll-behavior: smooth;
+}
+.wrapper {
+    width: 1024px;
+    margin: auto;
+    padding: 20px 0px 20px 0px;
+}
+
+/*
+* menu
+*/
+nav {
+    background-color: #F5C45E;
+    color: #000;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+nav > .wrapper {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    align-items: center;
+}
+
+.menu {
+    width: 50%;
+}
+
+.menu > ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    justify-content: space-between;
+}
+
+.menu > ul > li > a {
+    text-decoration: none;
+    color: #000;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo > img {
+    height: 95px;
+}
+
+/*
+* Hero / jumbotron
+*/
+header {
+    background: url('images/2WhatsApp\ Image\ 2025-04-23\ at\ 22.32.53.jpeg');
+    height: 100vh;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    font-family: "Kanit", sans-serif;
+    letter-spacing: 4px;
+    text-shadow: 0 0 4px #000;
+}
+.header-opacity {
+    background-color: #102E50;
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.header-jumbotron {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.header-jumbotron > h4 {
+    font-family: "Nunito", sans-serif;
+    color: #fff;
+    font-size: 1.8rem;
+    margin: 0px;
+    padding: 0px;
+}
+.header-jumbotron > h5 {
+    font-family: "Kanit", sans-serif;
+    color: #fff;
+    margin: 0px;
+    padding: 5px;
+    font-size: 3.5rem;
+    line-height: 4rem;
+    text-transform: uppercase;
+}
+.header-jumbotron > p {
+    font-family: "Nunito", sans-serif;
+    color: #fff;
+    margin: 0px;
+    padding: 5px;
+    text-shadow: 0 0 5px #000;
+}
+a {
+    text-decoration: none;
+    color: #333;
+    text-shadow: none;
+}
+
+.button {
+    background-color: #F5C45E;
+    padding: 5px 10px 5px 10px;
+    border-radius: 6px;
+    font-family: "Kanit", sans-serif;
+}
+.button-xl {
+    font-size: 1.4rem;
+    padding: 20px;
+}
+
+/*
+* statistic
+*/
+#statistic {
+    background-color: #1a497e;
+    color: #fff;
+    font-family: "Nunito", sans-serif;
+    display: flex;
+}
+
+#statistic > .wrapper {
+    padding: 50px;
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#statistic > .wrapper > div {
+    text-align: center;
+}
+
+#statistic > .wrapper > div > p {
+    font-size: 2rem;
+    padding: 0px;
+    margin: 0px;
+    letter-spacing: 2px;
+}
+
+#statistic > .wrapper > div > p > i {
+    margin-right: 10px;
+    font-size: 2rem;
+}
+
+#statistic > .wrapper > div > small {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+
+/*
+* school profile
+*/
+#school-profile {
+    background-color: #DBD3D3;
+}
+
+#school-profile {
+    padding: 50px 0px 50px 0px;
+}
+
+#school-profile > .wrapper > h4 {
+    text-align: center;
+    font-size: 2.8rem;
+    margin: 0px;
+    padding: 0px;
+    font-family: "Kanit", sans-serif;
+}
+#school-profile > .wrapper > h4 > span {
+    color: #08192c;
+}
+
+#school-profile > .wrapper > p {
+    text-align: center;
+    margin: 0px;
+    margin-bottom: 50px;
+    font-family: "Kanit", sans-serif;
+    color: #08192c;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-gap: 40px;
+}
+
+.grid > .item {
+    border: 1px solid #000;
+    background-color: #08192c;
+    color: #fff;
+    border-radius: 6px;
+    position: relative;
+}
+
+.grid > .item > img {
+    width: 20%;
+    position: absolute;
+    top: 35px;
+    right: 20px;
+    height: auto;
+}
+
+.grid > .item > .item-detail {
+    padding: 10px;
+    width: 70%;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #F5C45E;
+}
+
+.grid > .item > .item-detail > div > p {
+    color: #d8eaff;
+    font-size: 1rem;
+    text-align: left;
+}
+
+/*
+* gallery
+*/
+
+#gallery {
+    background-color: #213448;
+    color: #d8eaff;
+}
+
+#gallery > .wrapper {
+    padding: 50px 0px 50px 0px;
+    max-width: 1000px;
+}
+
+#gallery > .wrapper > h4 {
+    text-align: center;
+    font-size: 2.8rem;
+    margin: 0px;
+    padding: 0px;
+    font-family: "Kanit", sans-serif;
+    text-shadow: 0 0 15px #000;
+}
+
+#gallery > .wrapper > p {
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 50px;
+}
+#gallery .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+#gallery .card img {
+    border-radius: 8px;
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+#gallery .card h3 {
+    text-align: center;
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+}
+
+/*
+* prestation
+*/
+
+#prestation {
+    background-color: #024CAA;
+    color: #e6f1ff;
+}
+
+#prestation > .wrapper {
+    padding: 50px 0px 50px 0px;
+    max-width: 1000px;
+}
+
+#prestation > .wrapper > div {
+    display: flex;
+    width: 70%;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#prestation > .wrapper > p {
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 50px;
+}
+
+#prestation > .wrapper > h4 {
+    text-align: center;
+    font-size: 2.8rem;
+    margin: 0px;
+    padding: 0px;
+    font-family: "Kanit", sans-serif;
+    text-shadow: 0 0 25px #000;
+}
+
+#prestation > .wrapper > div > .foto {
+    width: 30%;
+}
+
+#prestation > .wrapper > div > .foto > img {
+    max-width: 100%;
+}
+
+#prestation > .wrapper > div > .desc {
+    width: 70%;
+    padding: 20px;
+    margin: 10px;
+    background-color: #cadef8;
+    color: #08192c;
+    border-radius: 10px;
+}
+
+#prestation > .wrapper > div > .krips {
+    width: 70%;
+    padding: 20px;
+    margin: 10px;
+    background-color: #cadef8;
+    color: #08192c;
+    border-radius: 10px;
+}
+
+#prestation > .wrapper > div > .desc > p {
+    font-family: "Kanit", sans-serif;
+    color: #08192c;
+    font-size: 1.5rem;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+#prestation > .wrapper > div > .desc > small {
+    font-family: "Kanit", sans-serif;
+    font-size: 1rem;
+    color: #102E50;
+    text-align: center;
+}
+
+#prestation > .wrapper > div > .krips > p {
+    font-family: "Kanit", sans-serif;
+    color: #08192c;
+    font-size: 1.5rem;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+#prestation > .wrapper > div > .krips > small {
+    font-family: "Kanit", sans-serif;
+    font-size: 1rem;
+    color: #102E50;
+    align-items: center;
+}
+
+/*
+* contact
+*/
+
+#contact {
+    background-color: #F1EFEC;
+    color: #102E50;
+    text-shadow: 0 0 2px #08192c;
+    font-family: "Kanit", sans-serif;
+}
+
+#contact {
+    padding: 50px 0px 50px 0px;
+}
+
+#contact > .wrapper > h4 {
+    text-align: center;
+    font-size: 2.8rem;
+    margin: 0px;
+    padding: 0px;
+    font-family: "Kanit", sans-serif;
+}
+
+#contact > .wrapper > p {
+    text-align: center;
+    margin: 0px;
+    margin-bottom: 50px;
+    font-family: "Kanit", sans-serif;
+    color: #08192c;
+}
+
+#contact > .wrapper > div {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#contact > .wrapper > div > .desc {
+    width: 65%;
+    padding: 40px;
+    margin: 45px;
+    background-color: #102E50;
+    border-radius: 10px;
+    color: #fff;
+    text-shadow: 2px #F1EFEC;
+}
+
+#contact > .wrapper > div > .container {
+    margin: 40px;
+    padding: 40px;
+    box-sizing: border-box;
+    font-family: "Kanit", sans-serif;
+    width: 50%;
+    height: 50vh;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/*
+* copyright
+*/
+footer {
+    background-color: #102E50;
+    color: #F5C45E;
+    text-align: center;
+}
+
+footer > .wrapper {
+    padding: 30px 0px 30px 0px;
+}
+
+/*
+* hamburger
+*/
+button.hamburger {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: none;
+}
+
+button.hamburger > i {
+    color: #08192c;
+    font-size: 1.5rem;
+}
+
+button.hamburger > i.icon-close {
+    display: none;
+}
+
+/*
+* 1024, 900, 768, 600, 450
+*/
+@media only screen and (max-width: 1024px) {
+    .wrapper {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    #statistic > .wrapper > div > p {
+        font-size: 1.5rem;
+        margin: 0px;
+        padding: 0px;
+    }
+    #statistic > .wrapper > div > small {
+        font-size: 1rem;
+    }
+
+    .grid {
+        grid-template-columns: 45% 45%;
+    }
+
+    .item > img {
+        width: 10%;
+    }
+
+    .item > .item-detail > p {
+        font-size: 1.7rem;
+    }
+
+    .item > .item-detail > div > p {
+        font-size: 0.5rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .menu {
+        width: 60%;
+    }
+    .header-jumbotron > h4 {
+        font-size: 1.6rem;
+    }
+    .header-jumbotron > h5 {
+        font-size: 3rem;
+        line-height: 3.5rem;
+    }
+
+    .header-jumbotron > p {
+        font-size: 0.9rem;
+    }
+
+    .button {
+        padding: 8px;
+    }
+
+    .button-xl {
+        font-size: 1.3rem;
+        padding: 10px;
+    }
+
+    #statistic > .wrapper > div > p {
+        font-size: 1.5rem;
+        margin: 0px;
+    }
+
+    #statistic > .wrapper > div > p > i {
+        font-size: 1.3rem;
+    }
+
+    #statistic > .wrapper > div > p {
+        font-size: 1.2rem;
+    }
+
+    #statistic > .wrapper > div > p > small {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .grid {
+        grid-template-columns: 100%;
+    }
+
+    #statistic > .wrapper {
+        padding: 30px;
+        flex-direction: column;
+    }
+
+    #statistic > .wrapper > div {
+        display: flex;
+    }
+
+    #statistic > .wrapper > div > small {
+        font-size: 1rem;
+        padding-left: 7px;
+    }
+
+    #statistic > .wrapper > div > p > i {
+        font-size: 1rem;
+    }
+
+    #statistic > .wrapper > div > p {
+        font-size: 1rem;
+    }
+
+    #contact > .wrapper > div > .container {
+        margin: 20px;
+        padding: 20px;
+        width: 20%;
+        height: 20vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    button.hamburger {
+        display: inline;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .tampil {
+        display: inline;
+    }
+
+    .tampil > ul {
+        flex-direction: column;
+        background-color: #94B4C1;
+        width: 100%;
+        position: fixed;
+        top: 120px;
+        left: 0px;
+    }
+
+    .tampil > ul > li {
+        padding: 10px 20px 10px 20px;
+    }
+
+    #prestation > .wrapper > div > .krips {
+        width: 50%;
+        padding: 15px;
+        margin: 7px;
+    }
+
+    #prestation > .wrapper > div > .krips > p {
+        font-size: 1rem;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+
+    #prestation > .wrapper > div > .desc {
+        padding: 10px;
+        margin: 5px;
+    }
+
+    prestation > .wrapper > div > .desc > small {
+        font-size: 0.5rem;
+    }
+    
+    #prestation > .wrapper > div > .krips > small {
+        font-size: 0.5rem;
+    }
+    
+    #prestation > .wrapper > div > .foto {
+        width: 80%;
+    }
+    
+    #prestation > .wrapper > div > .foto > img {
+        max-width: 90%;
+    }
+    
+    #prestation > .wrapper > div > .desc > p {
+        font-size: 1rem;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    #contact > .contact > div > .container > iframe {
+        height: 100vh;
+        width: 100%;
+    }
+    .container iframe {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 9;
+        border: 0;
+    }
+}
